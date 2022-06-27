@@ -1,5 +1,5 @@
 import React from "react";
-import { Zoom } from "react-slideshow-image";
+import { Zoom} from "react-slideshow-image"
 
 const url = "https://percycordova.github.io/Guide/Assets/carrusel-lg.png";
 
