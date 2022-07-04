@@ -1,4 +1,5 @@
 import React from "react";
+import { AiOutlineWhatsApp as Wsp } from "react-icons/ai";
 
 const Index = () => {
   return (
@@ -80,12 +81,8 @@ const Index = () => {
       </div>
       <div className="footer-fixed">
         <div className="btn-wsp ">
-          <img
-            src="https://static.xx.fbcdn.net/rsrc.php/yz/r/lOol7j-zq4u.svg"
-            alt=""
-            className=""
-          />
-          <div>¿En qué podemos ayudarte?</div>
+          <Wsp className="w-[22px] h-[22px] my-auto" />
+          <div className="my-auto">¿En qué podemos ayudarte?</div>
         </div>
       </div>
     </div>

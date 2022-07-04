@@ -1,5 +1,5 @@
 import React from "react";
-import { Zoom} from "react-slideshow-image"
+import { Zoom } from "react-slideshow-image";
 
 const url = "https://percycordova.github.io/Guide/Assets/carrusel-lg.png";
 
@@ -13,7 +13,7 @@ const zoomInProperties = {
 const Index = () => {
   return (
     <div className="wrapper-acerca">
-      <div className="w-auto h-auto lg:h-[90%] flex flex-col justify-around  ">
+      <div className="w-[100%] h-[100%] lg:h-[90%] flex flex-col justify-around my-auto ">
         <div className="acerca-tittle">Acerca de GUIDE</div>
         <div className="acerca-description">
           Somos una academia de preparación exclusiva para jóvenes que están
@@ -25,15 +25,19 @@ const Index = () => {
         </div>
       </div>
       <div className="acerca-slider">
-        {/* <div className="justify-center align-middle "> */}
-          <Zoom className="justify-center align-middle" {...zoomInProperties}>
-            {slideImages.map((each, index) => (
-              <div key={index} style={{ width: "100%" }}>
-                <img style={{ objectFit: "cover", width: "100%" }} src={each} />
-              </div>
-            ))}
-          </Zoom>
-        {/* </div> */}
+        <Zoom
+          className="w-[248px] h-[152px]  
+          md:w-[300px] md:h-[200px] 
+          lg:w-[438px] lg:h-[268px] my-auto"
+          {...zoomInProperties}
+        >
+          {slideImages.map((each, index) => (
+            <div key={index} style={{ width: "100%" }}>
+              <img style={{ objectFit: "cover", width: "100%" }} src={each} />
+            </div>
+          ))}
+        </Zoom>
+        {/* <div className=" w-[248px] h-[152px] my-auto border-4 "></div> */}
       </div>
     </div>
   );

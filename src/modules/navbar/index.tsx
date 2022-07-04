@@ -17,11 +17,11 @@ const Index: NextComponentType = () => {
             alt="logo_img"
           />
         </div>
-        <div className="flex flex-col justify-around gap-y-3  w-[151px]">
-          <p className="font-semibold text-white text-[8.5px] font-[Poppins]">
+        <div className="flex flex-col gap-y-3  w-[151px]  items-center ">
+          <p className="font-semibold text-white text-[6.5px] w-[115px] font-[Poppins] leading-[10px]  text-center lg:w-[167px] lg:text-[10px] lg:leading-[15px]">
             Antes de matricularte obtén una
           </p>
-          <button className="uppercase text-white bg-[#f00109] rounded-[96px] font-[poppins] h-[31px]  text-sm ">
+          <button className="uppercase text-white bg-[#f00109] rounded-[96px] font-[poppins] h-[31px]  w-[115px] text-sm  lg:w-[181px] lg:text-[23px] lg:leading-[34px]">
             Clase gratis
           </button>
         </div>
