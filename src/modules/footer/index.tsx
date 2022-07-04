@@ -4,31 +4,31 @@ import { AiOutlineWhatsApp as Wsp } from "react-icons/ai";
 const Index = () => {
   return (
     <div className="wrapper-footer">
-      <div className="w-[90%] mt-6 m-auto flex flex-row justify-between lg:flex-row lg:justify-around ">
-        <div className="w-[144px] h-[80px] ">
+      <div className="w-[90%] mt-6 m-auto flex  lg:flex-row-reverse lg:w-[60%] ">
+        <div className=" m-auto w-[100%] lg:w-auto">
           <p className="text-[20px]">Conócenos</p>
           <ul>
             <li>- Aula Virtual</li>
             <li>- Blog</li>
           </ul>
         </div>
-        <div className="w-[66px] h-[61px]  ">
+        <div className="    m-auto w-[66px] h-[61px] lg:w-[113px] lg:h-[106px]">
           <img
             src="https://percycordova.github.io/Guide/Assets/Guide%20Pre%20Militar%20Blanco_1%201.png"
             alt=""
-            className="w-[100%] h-[100%]"
+            className="w-[100%] h-[100%] "
           />
         </div>
       </div>
       <div className="w-[90%] mt-6 m-auto flex flex-col lg:flex-row lg:justify-around ">
-        <div>
-          <p className="text-[20px]">Contacto</p>
-          <ul>
+        <div className="">
+          <p className="text-[20px] ">Contacto</p>
+          <ul className="">
             <li className="flex justify-items-center align-middle m-auto">
               <img
                 src="https://percycordova.github.io/Guide/Assets/gps.svg"
                 alt=""
-                className="w-[12px] h-[11px] mt-2"
+                className="w-[12px] h-[11px] mt-2 mr-2"
               />
               Alfredo Benavides 1944, piso 09, Miraflores 15048.
             </li>
@@ -36,7 +36,7 @@ const Index = () => {
               <img
                 src="https://percycordova.github.io/Guide/Assets/telefono.svg"
                 alt=""
-                className="w-[12px] h-[11px] mt-2"
+                className="w-[12px] h-[11px] mt-2 mr-2"
               />
               938 561 890
             </li>
@@ -44,7 +44,7 @@ const Index = () => {
               <img
                 src="https://percycordova.github.io/Guide/Assets/correo.svg"
                 alt=""
-                className="w-[12px] h-[11px] mt-2"
+                className="w-[12px] h-[11px] mt-2 mr-2"
               />
               info@guideasesores.com
             </li>
@@ -52,13 +52,13 @@ const Index = () => {
               <img
                 src="https://percycordova.github.io/Guide/Assets/hora.svg"
                 alt=""
-                className="w-[12px] h-[11px] mt-2"
+                className="w-[12px] h-[11px] mt-2 mr-2"
               />
               10 am a 7:30 pm
             </li>
           </ul>
         </div>
-        <div>
+        <div className="">
           <p>Redes</p>
           <div className="flex justify-start  gap-x-4 mt-2">
             <img

@@ -9,37 +9,70 @@ const Index = () => {
       <div className="dirigimos-tittle">¿A quienés nos dirigimos?</div>
       <div className="dirigimos-items">
         <div className="dirigimos-item1">
-          <div className="dirigimos-civiles">
-            <Show
-              condition={!ishover1}
-              df={
-                <div
-                  className="flex w-[100%] h-[100%] rounded-full  "
-                  // src="https://percycordova.github.io/Guide/Assets/civil.svg"
-                  // alt="img_civiles"
-                  onMouseOut={() => sethover1(false)}
-                >
-                  <div
-                    className="flex text-[10px]  leading-[15px] text-center font-medium font-[Poppins] m-auto
-                  lg:text-[13px] lg:leading-[20px] lg:font-normal"
-                  >
-                    Jóvenes que deseen postular a las Escuelas de Oficiales y
-                    Sub oficiales (FF. AA) SERVICIO MILITAR
-                  </div>
-                </div>
+          <div
+            className="dirigimos-civiles"
+            onMouseOver={() => sethover1(true)}
+            onMouseOut={() => sethover1(false)}
+          >
+            <div
+              className={
+                !ishover1
+                  ? "w-[100%] h-[100%] rounded-full bg-[url('https://percycordova.github.io/Guide/Assets/civil.svg')] bg-no-repeat bg-cover "
+                  : " "
               }
+              // src=""
+              onMouseOver={() => sethover1(true)}
+            />
+
+            <div
+              className={
+                ishover1
+                  ? "w-[100%] h-[100%] flex m-auto transition duration-1000 ease-in-out text-center  transform   hover:scale-110  rounded-lg p-6 0"
+                  : "invisible"
+              }
+              onMouseOut={() => sethover1(false)}
             >
-              <img
-                className="dirigimos-civiles-img"
-                src="https://percycordova.github.io/Guide/Assets/civil.svg"
-                alt="img_civiles"
-                onMouseOver={() => sethover1(true)}
-              />
-            </Show>
+              <div className="civil-text">
+                Jóvenes que deseen postular a las Escuelas de Oficiales y Sub
+                oficiales (FF. AA) SERVICIO MILITAR
+              </div>
+            </div>
           </div>
           <div className="dirigmos-civiles-text ">Civiles</div>
         </div>
         <div className="dirigimos-item2">
+          <div
+            className="dirigimos-militar"
+            onMouseOver={() => sethover2(true)}
+            onMouseOut={() => sethover2(false)}
+          >
+            <div
+              className={
+                !ishover2
+                  ? "w-[100%] h-[100%] rounded-full  bg-[url('https://percycordova.github.io/Guide/Assets/militar.svg')]  bg-cover "
+                  : " "
+              }
+              // src=""
+              onMouseOver={() => sethover2(true)}
+            />
+
+            <div
+              className={
+                ishover2
+                  ? "w-[100%] h-[100%] flex m-auto transition duration-1000 ease-in-out text-center  transform   hover:scale-110  rounded-lg p-6 0"
+                  : "invisible"
+              }
+              onMouseOut={() => sethover2(false)}
+            >
+              <div className="civil-text">
+                Jóvenes que deseen postular a las Escuelas de Oficiales y Sub
+                oficiales (FF. AA) SERVICIO MILITAR
+              </div>
+            </div>
+          </div>
+          <div className="dirigmos-civiles-text ">Civiles</div>
+        </div>
+        {/* <div className="dirigimos-item2">
           <div className="dirigimos-militar">
             <Show
               condition={!ishover2}
@@ -72,7 +105,7 @@ const Index = () => {
             </Show>
           </div>
           <div className="dirigmos-militar-text">Servicio Militar</div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

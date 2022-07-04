@@ -18,11 +18,12 @@
 }
 
 .preparate {
-  @apply text-center xl:text-left w-[100%]  xl:w-[60%] mx-[auto] font-[Poppins] font-[1000] text-[30px] sm:text-[40px] leading-[60px] not-italic;
+  @apply text-center xl:text-left w-[100%]  xl:w-[60%] mx-[auto]  font-[1000] text-[30px] sm:text-[40px] leading-[60px] not-italic;
 }
 
 .inscribirme {
-  @apply w-[275px]  h-[51px] mx-auto rounded-xl bg-[#F00109] text-white font-semibold text-[36px] leading-[54px];
+  @apply w-[147px] h-[34px] mx-auto rounded-[92px] bg-[#F00109] text-white font-semibold text-[20px] leading-[30px]
+  lg:w-[275px] lg:h-[51px] lg:text-[36px] lg:leading-[54px] lg:my-6;
 }
 
 .wrapper-logo {
@@ -37,12 +38,12 @@
 }
 
 .acerca-tittle {
-  @apply justify-center align-middle mt-4 text-center text-[27px] font-[Poppins] font-bold not-italic leading-[40px] mx-auto
+  @apply justify-center align-middle mt-4 text-center text-[27px]  font-bold not-italic leading-[40px] mx-auto
   w-[228px] h-[39px];
 }
 
 .acerca-description {
-  @apply font-[Poppins] text-sm  mx-auto text-justify leading-[21px] font-normal
+  @apply text-sm  mx-auto text-justify leading-[21px] font-normal
   w-[280px] h-[214px]
   lg:w-[366px] lg:h-[227px] lg:text-[16px] lg:leading-[24px];
 }
@@ -56,7 +57,7 @@
 }
 
 .nosotros-tittle {
-  @apply justify-center align-middle text-center font-[Poppins] not-italic font-bold text-[27px] leading-[40px] my-10 mix-blend-normal
+  @apply justify-center align-middle text-center  not-italic font-bold text-[27px] leading-[40px] my-10 mix-blend-normal
   lg:text-[40px] lg:leading-[60px];
 }
 
@@ -83,7 +84,7 @@
 }
 
 .dirigimos-tittle {
-  @apply m-auto w-[80%] text-center font-[Poppins] not-italic font-bold text-[27px] leading-[40px] my-10 
+  @apply m-auto w-[80%] text-center  not-italic font-bold text-[27px] leading-[40px] my-10 
   md:w-[40%] mix-blend-normal 
   lg:text-[40px] lg:leading-[60px];
 }
@@ -104,11 +105,19 @@
 }
 
 .dirigimos-civiles-img {
-  @apply w-[100%] h-[100%] rounded-full block;
+  @apply w-[100%] h-[100%] rounded-full flex border-4;
+}
+
+.dirigimos-civiles-img-hover {
+  @apply w-[100%] h-[100%] rounded-full block invisible;
+}
+.civil-text{
+  @apply  m-auto  not-italic font-normal text-[10px] leading-[15px]
+  lg:text-[13px] lg:leading-[20px]
 }
 
 .dirigmos-civiles-text {
-  @apply text-center my-6 font-[Poppins] not-italic font-medium text-[18px] leading-[27px]
+  @apply text-center my-6  not-italic font-medium text-[18px] leading-[27px]
   lg:text-[24px] lg:leading-[36px];
 }
 
@@ -127,7 +136,7 @@
 }
 
 .dirigmos-militar-text {
-  @apply text-center my-6 font-[Poppins] not-italic font-medium text-[18px] leading-[27px]
+  @apply text-center my-6  not-italic font-medium text-[18px] leading-[27px]
   lg:text-[24px] lg:leading-[36px];
 }
 
@@ -142,13 +151,13 @@
 }
 
 .descubre-tittle {
-  @apply mx-auto w-[230px] h-[72px] text-center font-[Poppins] not-italic font-bold text-[27px] leading-[40px] my-10 
+  @apply mx-auto w-[230px] h-[72px] text-center  not-italic font-bold text-[27px] leading-[40px] my-10 
   md:w-[400px] md:h-[68px]
   lg:w-[677px] lg:h-[66px] lg:text-[40px] lg:leading-[60px];
 }
 
 .descubre-text {
-  @apply mx-auto  w-[320px] h-[97px]  font-[Poppins] text-[13px]  leading-[20px] font-medium not-italic
+  @apply mx-auto  w-[320px] h-[97px]   text-[13px]  leading-[20px] font-medium not-italic
   md:w-[520px] md:h-[98px]
   lg:w-[703px] lg:h-[78px] lg:text-lg lg:text-[18px] lg:leading-[27px] mix-blend-normal;
 }
@@ -163,16 +172,32 @@
 }
 
 .descubre-items1-titulo {
-  @apply text-center  mt-7 mb-[26px] font-[Poppins] not-italic font-bold text-[30px] leading-[45px];
+  @apply text-center  mt-7 mb-[26px]  not-italic font-bold text-[30px] leading-[45px];
 }
 
 .descubre-items1-medallas {
   @apply grid grid-flow-col grid-rows-2 m-auto w-auto h-auto gap-3;
 }
+.descubre-img {
+  @apply block w-[64px] h-[80px] m-auto grayscale;
+}
+
+.descubre-img-click {
+  @apply grayscale-0;
+}
 
 .descubre-items1-btn {
-  @apply w-[139px] h-[64px] rounded-[14px]  mx-auto my-7 bg-white text-black border-black border-2 block 
+  @apply w-[139px] h-[64px] rounded-[14px] mx-auto my-7 bg-white text-black border-black border-2 block  
   hover:bg-[#F00109] hover:text-white hover:border-0;
+}
+
+.descubre-items1-btn-click {
+  @apply bg-[#F00109] border-0 text-white;
+}
+
+.descubre-items2-btn-click {
+  @apply bg-[#F00109] border-0 text-white;
+  /* @apply text-center */
 }
 
 .descubre-items2 {
@@ -180,7 +205,7 @@
 }
 
 .descubre-items2-titulo {
-  @apply text-center mt-7 mb-[26px] font-[Poppins] not-italic font-bold text-[30px] leading-[45px];
+  @apply text-center mt-7 mb-[26px]  not-italic font-bold text-[30px] leading-[45px];
 }
 
 .descubre-items2-medallas {
@@ -188,7 +213,7 @@
 }
 
 .descubre-items2-btn {
-  @apply w-[139px] h-[64px] rounded-[14px]  mx-auto my-7 bg-white text-black border-black border-2 block 
+  @apply w-[139px] h-[64px] rounded-[14px] mx-auto my-7 bg-white text-black border-black border-2 block  
   hover:bg-[#F00109] hover:text-white hover:border-0;
 }
 
@@ -196,8 +221,17 @@
   @apply bg-white rounded-3xl w-[275px] h-[390px] m-auto;
 }
 
+.descubre-items3-btn-click {
+  @apply bg-[#F00109] border-0 text-white;
+}
+
 .descubre-items3-titulo {
-  @apply text-center mt-7 mb-[26px] font-[Poppins] not-italic font-bold text-[30px] leading-[45px];
+  @apply text-center mt-7 mb-[26px]  not-italic font-bold text-[30px] leading-[45px];
+}
+
+.descubre-items3-btn-click {
+  @apply bg-[#F00109] border-0 text-white;
+  /* @apply text-center */
 }
 
 .descubre-items3-medallas {
@@ -205,7 +239,7 @@
 }
 
 .descubre-items3-btn {
-  @apply w-[139px] h-[64px] rounded-[14px]  mx-auto my-7 bg-white text-black border-black border-2 block 
+  @apply w-[139px] h-[64px] rounded-[14px]  mx-auto my-7 bg-white text-black border-black border-2 block  
   hover:bg-[#F00109] hover:text-white hover:border-0;
 }
 
@@ -222,7 +256,7 @@
 
 .wrapper-aula-tittle {
   @apply flex justify-center align-middle w-auto h-auto p-10
-  font-[Poppins] font-bold text-[27px] leading-10 text-center
+   font-bold text-[27px] leading-10 text-center
   lg:text-[40px] lg:leading-[60px];
 }
 
@@ -256,13 +290,13 @@
 
 .ingresantes-tittle {
   @apply flex justify-center align-middle w-auto h-auto p-10
-  font-[Poppins] font-bold text-[27px] leading-10 text-center
+   font-bold text-[27px] leading-10 text-center
   lg:text-[40px] lg:leading-[60px];
 }
 
 .wrapper-ingresantes-items {
-  @apply grid grid-cols-1 mx-auto gap-y-4
-  lg:grid-cols-3;
+  @apply flex flex-col h-[900px]  m-auto
+  lg:flex-row lg:h-[400px] lg:w-[1000px];
 }
 
 .ingresantes-1 {
@@ -280,7 +314,8 @@
 /* Footer */
 
 .wrapper-footer {
-  @apply bg-[#8D8D8D] flex flex-col h-[450px];
+  @apply bg-[#8D8D8D] flex flex-col h-[450px] 
+  lg:flex-row lg:h-[220px];
 }
 
 .footer-fixed {
