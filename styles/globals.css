@@ -89,12 +89,13 @@
 }
 
 .dirigimos-items {
-  @apply grid grid-cols-1 h-[560px] w-[100%] mx-auto my-auto  
-   lg:grid-cols-2;
+  @apply grid grid-cols-1 h-auto w-[100%] mx-auto my-auto   
+   lg:grid-cols-2 lg:h-[400px] lg:w-[70%];
 }
 
 .dirigimos-item1 {
-  @apply flex flex-col justify-center align-middle;
+  @apply flex flex-col justify-center  align-middle 
+  w-[300px] h-[300px] m-auto;
 }
 
 .dirigimos-civiles {
@@ -112,7 +113,8 @@
 }
 
 .dirigimos-item2 {
-  @apply flex flex-col justify-center align-middle;
+  @apply flex flex-col justify-center align-middle 
+  w-[300px] h-[300px] m-auto;
 }
 
 .dirigimos-militar {
@@ -148,7 +150,7 @@
 .descubre-text {
   @apply mx-auto  w-[320px] h-[97px]  font-[Poppins] text-[13px]  leading-[20px] font-medium not-italic
   md:w-[520px] md:h-[98px]
-  lg:w-[703px] lg:h-[78px] lg:text-lg lg:text-[18px] lg:leading-[27px] mix-blend-normal
+  lg:w-[703px] lg:h-[78px] lg:text-lg lg:text-[18px] lg:leading-[27px] mix-blend-normal;
 }
 
 .wrapper-descubre-items {
