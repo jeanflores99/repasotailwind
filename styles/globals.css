@@ -111,9 +111,9 @@
 .dirigimos-civiles-img-hover {
   @apply w-[100%] h-[100%] rounded-full block invisible;
 }
-.civil-text{
-  @apply  m-auto  not-italic font-normal text-[10px] leading-[15px]
-  lg:text-[13px] lg:leading-[20px]
+.civil-text {
+  @apply m-auto  not-italic font-normal text-[10px] leading-[15px]
+  lg:text-[13px] lg:leading-[20px];
 }
 
 .dirigmos-civiles-text {
@@ -319,10 +319,10 @@
 }
 
 .footer-fixed {
-  @apply fixed lg:w-[290px] lg:h-[40px] bottom-[2vh] left-[2vh] 
-  w-[160px] h-[34px];
+  @apply flex fixed bottom-[2vh] justify-between px-4
+  w-[100%]
 }
 
 .btn-wsp {
-  @apply bg-[#00e676] w-[250px] h-[34px] text-white flex rounded-lg justify-center my-auto;
+  @apply bg-[#00e676] w-[240px] h-[34px] text-white flex rounded-lg justify-center my-auto;
 }

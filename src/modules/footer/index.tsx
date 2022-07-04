@@ -1,5 +1,8 @@
 import React from "react";
-import { AiOutlineWhatsApp as Wsp } from "react-icons/ai";
+import {
+  AiOutlineWhatsApp as Wsp,
+  AiOutlineMessage as Mss,
+} from "react-icons/ai";
 
 const Index = () => {
   return (
@@ -81,8 +84,11 @@ const Index = () => {
       </div>
       <div className="footer-fixed">
         <div className="btn-wsp ">
-          <Wsp className="w-[22px] h-[22px] my-auto" />
+          <Wsp className="w-[22px] h-[22px] my-auto z-auto" />
           <div className="my-auto">¿En qué podemos ayudarte?</div>
+        </div>
+        <div className="w-[30px] h-[30px] bg-[#F00109]  my-auto flex rounded-full ">
+          <Mss className="w-[22px] h-[22px] m-auto z-auto text-white " />
         </div>
       </div>
     </div>

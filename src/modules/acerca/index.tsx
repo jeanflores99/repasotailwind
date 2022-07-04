@@ -28,12 +28,13 @@ const Index = () => {
         <Zoom
           className="w-[248px] h-[152px]  
           md:w-[300px] md:h-[200px] 
-          lg:w-[438px] lg:h-[268px] my-auto"
+          lg:w-[438px] lg:h-[268px] my-auto 
+          -z-20"
           {...zoomInProperties}
         >
           {slideImages.map((each, index) => (
             <div key={index} style={{ width: "100%" }}>
-              <img style={{ objectFit: "cover", width: "100%" }} src={each} />
+              <img style={{ objectFit: "cover", width: "100%" }} src={each}  />
             </div>
           ))}
         </Zoom>
